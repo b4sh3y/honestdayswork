@@ -177,7 +177,7 @@
 			"response": []
 		},
 		{
-			"name": "BadReq",
+			"name": "New Request",
 			"event": [
 				{
 					"listen": "test",
@@ -187,8 +187,8 @@
 							"pm.test(\"Response has a Content-Length header\", function () {\r",
 							"    pm.expect(pm.response.headers.has('Content-Length')).to.be.true;\r",
 							"});\r",
-							"pm.test(\"Status code is 404\", function () {\r",
-							"    pm.response.to.have.status(404);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
 							"});"
 						],
 						"type": "text/javascript"
