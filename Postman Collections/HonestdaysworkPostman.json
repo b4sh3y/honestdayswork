@@ -177,14 +177,32 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "BadReq",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4e2d87da-4d17-4dfc-8e2d-421f839cb3c7",
+						"exec": [
+							"pm.test(\"Response has a Content-Length header\", function () {\r",
+							"    pm.expect(pm.response.headers.has('Content-Length')).to.be.true;\r",
+							"});\r",
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "ea0004c3-3449-49de-8f23-2b2fc0c85b98",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "https://reqres.in/api/users/23"
 			},
 			"response": []
 		}
