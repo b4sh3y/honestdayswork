@@ -175,6 +175,18 @@
 				"url": "https://reqres.in/api/users/2"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "ea0004c3-3449-49de-8f23-2b2fc0c85b98",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
