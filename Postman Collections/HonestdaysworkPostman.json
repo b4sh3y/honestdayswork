@@ -17,6 +17,9 @@
 							"    pm.response.to.have.header(\"Content-Type\");\r",
 							"});\r",
 							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
 							"\r",
 							"// Test to check if the Content-Type header is present and set to application/json\r",
 							"pm.test(\"Content-Type is application/json\", function () {\r",
@@ -27,7 +30,7 @@
 					}
 				}
 			],
-			"_postman_id": "4cdd3603-3c07-411f-8ee8-797c5dbd3fa3",
+			"id": "4cdd3603-3c07-411f-8ee8-797c5dbd3fa3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -58,7 +61,7 @@
 					}
 				}
 			],
-			"_postman_id": "fca724ee-f06d-4bdc-a35c-d90c1a68dda6",
+			"id": "fca724ee-f06d-4bdc-a35c-d90c1a68dda6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -135,7 +138,7 @@
 					}
 				}
 			],
-			"_postman_id": "8168270d-8303-4039-893b-e28cd948c2aa",
+			"id": "8168270d-8303-4039-893b-e28cd948c2aa",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -162,7 +165,7 @@
 					}
 				}
 			],
-			"_postman_id": "65fed563-809a-4c27-b9ef-43e689ad7182",
+			"id": "65fed563-809a-4c27-b9ef-43e689ad7182",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
