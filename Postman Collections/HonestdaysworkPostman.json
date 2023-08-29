@@ -70,7 +70,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"leader\"\r\n}",
+					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"leader\"\r\n},\r\n{\r\n    12: \"$$\",\r\n    array: [\"a\",\"b\"]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
