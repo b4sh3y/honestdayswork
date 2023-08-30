@@ -130,7 +130,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.sendRequest(\"https://reqres.in/api/users/2?name=barry/get\", function (err, response) {\r",
+							"pm.sendRequest(\"https://reqres.in/api/users/get\", function (err, response) {\r",
 							"    console.log(response.json());\r",
 							"});"
 						],
@@ -160,8 +160,7 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "barry",
-							"type": "text"
+							"value": "barry"
 						}
 					]
 				}
