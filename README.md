@@ -4,7 +4,7 @@ Showcase of my stack knowledege
 DRAFT
 
 Test cases
-Website availability
+- Website availability
 Hover over button test
 - Check if background changes
 Contact us test

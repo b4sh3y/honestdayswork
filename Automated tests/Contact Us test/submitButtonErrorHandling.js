@@ -15,7 +15,7 @@ describe('Automated Test', function () {
     await driver.quit();
   });
 
-  it('Open soportradar website', async function () {
+  it('Open sportradar website', async function () {
     // Navigate to the endpoint
     await driver.get('https://sportradar.com/contact');
     });
