@@ -17,6 +17,9 @@
 							"    pm.response.to.have.header(\"Content-Type\");\r",
 							"});\r",
 							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
 							"\r",
 							"// Test to check if the Content-Type header is present and set to application/json\r",
 							"pm.test(\"Content-Type is application/json\", function () {\r",
@@ -27,7 +30,7 @@
 					}
 				}
 			],
-			"_postman_id": "4cdd3603-3c07-411f-8ee8-797c5dbd3fa3",
+			"id": "4cdd3603-3c07-411f-8ee8-797c5dbd3fa3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -58,7 +61,7 @@
 					}
 				}
 			],
-			"_postman_id": "fca724ee-f06d-4bdc-a35c-d90c1a68dda6",
+			"id": "fca724ee-f06d-4bdc-a35c-d90c1a68dda6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -67,7 +70,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"leader\"\r\n}",
+					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"leader\",\r\n     \"12\": 12,\r\n    \"array\": [\"a\",\"b\"]\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -135,7 +138,7 @@
 					}
 				}
 			],
-			"_postman_id": "8168270d-8303-4039-893b-e28cd948c2aa",
+			"id": "8168270d-8303-4039-893b-e28cd948c2aa",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -162,7 +165,7 @@
 					}
 				}
 			],
-			"_postman_id": "65fed563-809a-4c27-b9ef-43e689ad7182",
+			"id": "65fed563-809a-4c27-b9ef-43e689ad7182",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -170,6 +173,36 @@
 				"method": "DELETE",
 				"header": [],
 				"url": "https://reqres.in/api/users/2"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4e2d87da-4d17-4dfc-8e2d-421f839cb3c7",
+						"exec": [
+							"pm.test(\"Response has a Content-Length header\", function () {\r",
+							"    pm.expect(pm.response.headers.has('Content-Length')).to.be.true;\r",
+							"});\r",
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ea0004c3-3449-49de-8f23-2b2fc0c85b98",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://reqres.in/api/users/23"
 			},
 			"response": []
 		}
