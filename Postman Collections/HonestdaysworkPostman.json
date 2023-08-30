@@ -150,7 +150,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "DeleteReq",
 			"event": [
 				{
 					"listen": "test",
