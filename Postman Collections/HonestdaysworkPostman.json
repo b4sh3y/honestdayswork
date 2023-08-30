@@ -177,7 +177,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "BadReq",
 			"event": [
 				{
 					"listen": "test",
