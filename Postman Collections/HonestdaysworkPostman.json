@@ -130,7 +130,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.sendRequest(\"https://reqres.in/api/users/get\", function (err, response) {\r",
+							"pm.sendRequest(\"https://reqres.in/api/users/2?name=barry/get\", function (err, response) {\r",
 							"    console.log(response.json());\r",
 							"});"
 						],
@@ -145,7 +145,26 @@
 			"request": {
 				"method": "PATCH",
 				"header": [],
-				"url": "https://reqres.in/api/users/2"
+				"url": {
+					"raw": "https://reqres.in/api/users/2?name=barry",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "barry",
+							"type": "text"
+						}
+					]
+				}
 			},
 			"response": []
 		},
