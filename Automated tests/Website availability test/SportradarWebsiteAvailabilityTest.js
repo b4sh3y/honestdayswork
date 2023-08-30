@@ -2,7 +2,7 @@ const { Builder, By } = require('selenium-webdriver');
 const assert = require('assert');
 
 describe('Website Availability Test', function () {
-  this.timeout(50000); // Set a longer timeout if needed
+  this.timeout(50000);
 
   let driver;
 
