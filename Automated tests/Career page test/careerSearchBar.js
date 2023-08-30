@@ -40,7 +40,6 @@ describe('Automated Test', function () {
       await driver.wait(until.elementLocated(By.id('tru_accept_btn')), 10000);
     await element.click()
   })
-  //count trs before click - click - count trs after click
 
   it('Remote checkbox check', async function () {
     let numberOfEntriesBefore =  countTableEntries();
@@ -62,7 +61,7 @@ describe('Automated Test', function () {
 
   it('Filtering for keyword', async function () {
     let inputField = await driver.findElement(By.id('filter-by'));
-    await inputField.sendKeys('Hello, World!');
+    await inputField.sendKeys('Developer');
     let element =
       await driver.wait(until.elementLocated(By.className('srSearchButton')), 10000);
     await element.click()
